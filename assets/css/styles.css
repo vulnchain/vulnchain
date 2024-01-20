@@ -1,11 +1,12 @@
 /* Set height to 100% for body and html to enable the background image to cover the whole page: */
 body, html {
-    height: 100%
+    height: 100%;
+    margin: 0;
   }
   
   .bgimg {
     /* Background image */
-    background-image: url('/assests/img/background.jpg');
+    background-image: url('/assets/img/background.jpg');
     /* Full-screen */
     height: 100%;
     /* Center the background image */
