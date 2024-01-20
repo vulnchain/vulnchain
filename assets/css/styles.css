@@ -9,6 +9,7 @@ body, html {
     background-image: url('/assets/img/background.jpg');
     /* Full-screen */
     height: 100%;
+    filter: blur(8px);
     /* Center the background image */
     background-position: center;
     /* Scale and zoom in the image */
@@ -16,7 +17,7 @@ body, html {
     /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
     position: relative;
     /* Add a white text color to all elements inside the .bgimg container */
-    color: white;
+    color: rgb(255, 255, 255);
     /* Add a font */
     font-family: "Courier New", Courier, monospace;
     /* Set the font-size to 25 pixels */
@@ -28,13 +29,18 @@ body, html {
     position: absolute;
     top: 0;
     left: 16px;
+    color: rgb(236, 16, 16);
+    font-family: "Courier New", Courier, monospace;
   }
+
   
   /* Position text in the bottom-left corner */
   .bottomleft {
     position: absolute;
     bottom: 0;
     left: 16px;
+    color: rgb(236, 16, 16);
+    font-family: "Courier New", Courier, monospace;
   }
   
   /* Position text in the middle */
@@ -44,6 +50,8 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color: rgb(236, 16, 16);
+    font-family: "Courier New", Courier, monospace;
   }
   
   /* Style the <hr> element */
