@@ -10,6 +10,7 @@ body, html {
     /* Full-screen */
     height: 100%;
     filter: blur(8px);
+    -webkit-filter: blur(8px);
     /* Center the background image */
     background-position: center;
     /* Scale and zoom in the image */
