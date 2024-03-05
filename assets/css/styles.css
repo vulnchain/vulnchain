@@ -367,9 +367,24 @@ label:hover {
 
 
 
+.sub-links {
+  display: flex;
+  padding: 10px;
+  position: relative;
+}
 
+.sub-links li {
+  cursor: crosshair;
+  margin: 20px;
+  padding: 20px;
+  background-color: #DA250D;
+}
 
-
+.sub-links li a {
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+}
 
 
 
