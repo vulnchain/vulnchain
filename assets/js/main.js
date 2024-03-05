@@ -14,3 +14,23 @@ window.addEventListener('scroll', function() {
     var header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0);
   });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const accordionToggles = document.querySelectorAll('.accordion-toggle');
+    
+    accordionToggles.forEach(function(toggle) {
+        toggle.addEventListener('change', function() {
+            if (this.checked) {
+                closeOtherAccordions(this);
+            }
+        });
+    });
+    
+    function closeOtherAccordions(currentToggle) {
+        accordionToggles.forEach(function(toggle) {
+            if (toggle !== currentToggle) {
+                toggle.checked = false;
+            }
+        });
+    }
+});

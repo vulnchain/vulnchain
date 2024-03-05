@@ -331,6 +331,37 @@ p {
   text-align: left;
 }
 
+.content {
+  display: none;
+  padding: 10px;
+  background-color: #000000;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label + .content {
+  display: block;
+}
+
+label {
+  display: block;
+  padding: 20px;
+  text-align: left;
+  background-color: #DA250D;
+  margin-bottom: 5px;
+  cursor: crosshair;
+}
+
+label:hover {
+  background-color: #710a0a;
+}
+
+
+
+
+
 
 
 

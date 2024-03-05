@@ -59,10 +59,14 @@
         <p>As part of software security services, we offer penetration testing of web and native applications, API, and mobile applications. Security tests are performed both in the black-box methodology, without knowing the details of the solution (in native / binary applications based on techniques related to reverse engineering), and in the white-box methodology, including a thorough source code audit. We also offer you our advanced cryptographic solutions: their secure implementation in applications, as well as the vulnerability identification.</p>
     </section>
 
+
+
     <section>
-        <ul>
-            <li>
-                <h3>Web Application & API</h3>
+        <ul class="accordion">
+          <li>
+            <input type="checkbox" id="q1" class="accordion-toggle">
+            <label for="q1" class="accordion-title">Web Application & API</label>
+              <div class="content">
                 <p>Web application and API security tests are assessed in accordance with the OWASP Application Security Verification Standard (ASVS). What distinguishes us on the market is the fact that we do not rely on automatic tools. We carry out our tests manually, using automated tools only to automate basic work.</p>
                 <p>The types of errors we detect include:</p>
                 <ul>
@@ -86,9 +90,12 @@
                     <li>comprehensive REST API security tests,</li>
                     <li>comprehensive security tests of the additional mechanisms used withing web apps (such as WebSocket).</li>
                 </ul>
-            </li>
-            <li>
-                <h3>Mobile apps</h3>
+              </div>
+          </li>
+          <li>
+            <input type="checkbox" id="q2" class="accordion-toggle">
+            <label for="q2" class="accordion-title">Mobile apps</label>
+            <div class="content">
                 <p>Mobile applications penetration tests allow us to comprehensively verify the security of mobile solutions, from compliance with good practices, to examining the security of the application interface, its interaction with the mobile operating system and interaction with the backend that supports user requests. An important element of mobile application security tests is also decompilation and reverse engineering, necessary to verify the likelihood of disclosure of sensitive technological data, as well as discovering vulnerabilities invisible from the user interface or mobile system emulator. Our work focuses both on Apple ecosystem and the Android system.</p>
                 <p>Depending on your individual needs, we can:</p>
                 <ul>
@@ -110,9 +117,12 @@
                     <li>verify the vulnerability to typical web attacks (e.g., XSS, injection attacks – SQL, HTML, XML, and others – OS command injection, CSRF, cookie security, HTML5 security, or cross domain policy settings),</li>
                     <li>assess the privacy of application users (whether, for example, user data is not transferred to external servers).</li>
                 </ul>
-            </li>
-            <li>
-                <h3>Native applications</h3>
+            </div>
+          </li>
+          <li>
+            <input type="checkbox" id="q3" class="accordion-toggle">
+            <label for="q3" class="accordion-title">Native applications</label>
+            <div class="content">
                 <p>We perform security tests of binary / native applications written in both byte-compiled languages (e.g., C # / Java) and machine code (e.g., C / C ++). Our portfolio includes successfully conducted penetration tests of solutions such as thick-clients, ERP (Enterprise Resource Planning) systems, accounting systems, and messaging systems (including IBM MQ / ActiveMQ). We also have extensive experience in analyzing the security of native services, which are an extension of web browser extensions (Mozilla Firefox, Google Chrome) based on native messaging, both in macOS and Windows.</p>
                 <p>Our team has experience in identifying vulnerabilities such as:</p>
                 <ul>
@@ -168,9 +178,12 @@
                     </li>
                 </ul>
                 <p>We can offer you a comprehensive security analysis of native software.</p>
-            </li>
-            <li>
-                <h3>Code Review</h3>
+            </div>
+          </li>
+          <li>
+            <input type="checkbox" id="q4" class="accordion-toggle">
+            <label for="q4" class="accordion-title">Code Review</label>
+            <div class="content">
                 <p>The source code review is based on a very detailed security analysis that allows you to understand the context of the implemented mechanisms and to estimate the risk. It takes into account both the probability of an attack and the business risk that comes with it. We have many years of experience in identifying vulnerabilities in the source code, both in the context of web applications (including ASP.NET, PHP, Python, Go, JavaScript) and binary applications, such as the identification of typical C / C ++ errors in the context of management on a stack (e.g., Stack-based Buffer Overflow) or on a heap (e.g., Use-after-free and Heap-based Buffer Overflow).</p>
                 <p>Depending on your individual needs, we can:</p>
                 <ul>
@@ -178,9 +191,12 @@
                     <li>automatically analyze the source code for security errors and evaluate the results of false positive,</li>
                     <li>improve your software development process to minimize the number of programming errors.</li>
                 </ul>
-            </li>
-            <li>
-                <h3>Research & Development</h3>
+            </div>
+          </li>
+          <li>
+            <input type="checkbox" id="q5" class="accordion-toggle">
+            <label for="q5" class="accordion-title">Research & Development</label>
+            <div class="content">
                 <p>As part of the Research & Development, we deal with issues related to vulnerability research – we conduct an in-depth analysis of selected solutions in search of technically advanced security vulnerabilities.</p>
                 <p>An indispensable part of this type of work is fuzzing, i.e., all techniques consisting in providing the program with properly generated (unexpected) input data, thus causing behavior unforeseen by the developers of the solution.</p>
                 <p>Each detected irregularity (for example detecting anomalies in API monitors or a potential memory leak through information from an appropriate tool) is thoroughly analyzed in terms of its importance for the safety of the product.</p>
@@ -191,9 +207,12 @@
                     <li>prepare an environment for running software fuzzing,</li>
                     <li>develop tools to make use of the detected vulnerabilities (exploit development).</li>
                 </ul>
-            </li>
-            <li>
-                <h3>Security Development Lifecycle</h3>
+            </div>
+          </li>
+          <li>
+            <input type="checkbox" id="q6" class="accordion-toggle">
+            <label for="q6" class="accordion-title">Security Development Lifecycle</label>
+            <div class="content">
                 <p>As part of the Security Development Lifecycle, we support our clients in reducing costs by solving security problems as they arise. We also significantly minimize the organizational risk that may result from launching a vulnerable application in a production environment.</p>
                 <p>Our Secure SDLC activities include:</p>
                 <ul>
@@ -210,9 +229,12 @@
                     <li>review the architecture and design of the system,</li>
                     <li>verify and improve DevSecOps processes.</li>
                 </ul>
-            </li>
-            <li>
-                <h3>Cryptography</h3>
+            </div>
+          </li>
+          <li>
+            <input type="checkbox" id="q7" class="accordion-toggle">
+            <label for="q7" class="accordion-title">Cryptography</label>
+            <div class="content">
                 <p>At VULNCHAIN, we offer you our professional advice on the safe transmission and storage of information. The possible range of our cryptographic services include:</p>
                 <ul>
                     <li>assistance in the selection of appropriate architectural cryptographic solutions in the application,</li>
@@ -226,9 +248,10 @@
                     <li>prepare a recommendation of the most optimal cryptographic mechanisms for the system,</li>
                     <li>train programmers and architects in the correct use of cryptographic mechanisms.</li>
                 </ul>
-            </li>
+            </div>
+          </li>
         </ul>
-    </section>
+      </section>
 
 
 

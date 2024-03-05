@@ -59,52 +59,61 @@
     </section>
 
     <section>
-      <ul>
+      <ul class="accordion">
         <li>
-            <h3>IoT</h3>
-            <p>In today’s global and strictly connected world, the Internet of Things is everywhere where it is necessary to take responsibility for monitoring and controlling devices and entire systems, as well as supervising processes, important from the enterprises’ point of view. The idea of interconnected devices, once considered a scenario from the future, today is a fact and a part of our reality. Almost all devices using advanced electronics can be connected to the network and to the cloud, raising concerns and an urgent need for constant investment in the development of security measures. </p>
-            <p>The implementation of the Internet of Things on such a large scale opens up unprecedented opportunities to generate, collect and process data in real time. Its full potential gives limitless space for innovation. Its proper functioning however requires building a high level of digital trust and gaining certainty as to the security of used measures.</p>
-            <p>The solutions proposed by VULNCHAIN allow to efficiently identify flaws in security and, as a consequence, to get rid of them before they are noticed by attackers.</p>
+          <input type="checkbox" id="q1" class="accordion-toggle">
+          <label for="q1" class="accordion-title">IoT</label>
+            <div class="content">
+              <p>In today’s global and strictly connected world, the Internet of Things is everywhere where it is necessary to take responsibility for monitoring and controlling devices and entire systems, as well as supervising processes, important from the enterprises’ point of view. The idea of interconnected devices, once considered a scenario from the future, today is a fact and a part of our reality. Almost all devices using advanced electronics can be connected to the network and to the cloud, raising concerns and an urgent need for constant investment in the development of security measures. </p>
+              <p>The implementation of the Internet of Things on such a large scale opens up unprecedented opportunities to generate, collect and process data in real time. Its full potential gives limitless space for innovation. Its proper functioning however requires building a high level of digital trust and gaining certainty as to the security of used measures.</p>
+              <p>The solutions proposed by VULNCHAIN allow to efficiently identify flaws in security and, as a consequence, to get rid of them before they are noticed by attackers.</p>
+              <p>Depending on your individual needs, we can offer you:</p>
+              <ul>
+                  <li>testing of IoT (Internet of Things) devices,</li>
+                  <li>identification of systems,</li>
+                  <li>decapping integrated circuits,</li>
+                  <li>reading the firmware,</li>
+                  <li>physical attacks on integrated circuits,</li>
+                  <li>reading of secured memories (e.g., FLASH, EEPROM),</li>
+                  <li>designing digital circuits and making prototypes,</li>
+                  <li>digital circuit protection design.</li>
+              </ul>
+            </div>
+        </li>
+        <li>
+          <input type="checkbox" id="q2" class="accordion-toggle">
+          <label for="q2" class="accordion-title">Communication</label>
+          <div class="content">
+            <p>As the world becomes more computerized, the devices we use every day (such as drones, Internet of Things equipment and alarm and access systems) communicate with each other using the radio band. </p>
+            <p>Many of these devices process confidential data on where we live, work, and what we do. When intercepted by cybercriminals, this information could be misused. That is why proper protection of devices using the radio band is necessary in order to use them in a safe way.</p>
+            <p>Services by VULNCHAIN include the verification of the radio communication channel for maintaining confidentiality, integrity, and availability of transmitted data. </p>
             <p>Depending on your individual needs, we can offer you:</p>
             <ul>
-                <li>testing of IoT (Internet of Things) devices,</li>
-                <li>identification of systems,</li>
-                <li>decapping integrated circuits,</li>
-                <li>reading the firmware,</li>
-                <li>physical attacks on integrated circuits,</li>
-                <li>reading of secured memories (e.g., FLASH, EEPROM),</li>
-                <li>designing digital circuits and making prototypes,</li>
-                <li>digital circuit protection design.</li>
+                <li>radio communication analysis: determining the bandwidth used, communication method and protocols,</li>
+                <li>verification of radio communication in terms of ensuring the confidentiality of transmitted data (to prevent someone from eavesdropping on sensitive data sent over a radio channel),</li>
+                <li>verification of radio communication in terms of ensuring availability, i.e., the possibility of disrupting the transmission, which may result in loss of control over the device,</li>
+                <li>verification of radio communication in terms of ensuring integrity (to avoid the possibility of performing unauthorized operations),</li>
+                <li>model of authentication and authorization of commands for devices (to prevent intruders from taking control of the device),</li>
+                <li>assessment of the implementation of standard radio communication protocols, such as RFID or Wi-Fi networks.</li>
             </ul>
+          </div>
         </li>
         <li>
-          <h3>Communication</h3>
-          <p>As the world becomes more computerized, the devices we use every day (such as drones, Internet of Things equipment and alarm and access systems) communicate with each other using the radio band. </p>
-          <p>Many of these devices process confidential data on where we live, work, and what we do. When intercepted by cybercriminals, this information could be misused. That is why proper protection of devices using the radio band is necessary in order to use them in a safe way.</p>
-          <p>Services by VULNCHAIN include the verification of the radio communication channel for maintaining confidentiality, integrity, and availability of transmitted data. </p>
-          <p>Depending on your individual needs, we can offer you:</p>
-          <ul>
-              <li>radio communication analysis: determining the bandwidth used, communication method and protocols,</li>
-              <li>verification of radio communication in terms of ensuring the confidentiality of transmitted data (to prevent someone from eavesdropping on sensitive data sent over a radio channel),</li>
-              <li>verification of radio communication in terms of ensuring availability, i.e., the possibility of disrupting the transmission, which may result in loss of control over the device,</li>
-              <li>verification of radio communication in terms of ensuring integrity (to avoid the possibility of performing unauthorized operations),</li>
-              <li>model of authentication and authorization of commands for devices (to prevent intruders from taking control of the device),</li>
-              <li>assessment of the implementation of standard radio communication protocols, such as RFID or Wi-Fi networks.</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Firmware Analysis</h3>
-          <p>Firmware is low-level software that can be found in cameras, computers, consoles, telephones, TV sets and Internet of Things devices. It allows the operating system of a given hardware to communicate with its individual components. It can also act as the operating system for the entire device. </p>
-          <p>Although so important for the operation of devices that we use every day, the firmware is often designed without taking into account its security (especially when it comes to preventing physical attacks). This is dangerous because it can expose the device to cyberattacks, which may be aimed at spying on users, stealing data or taking control of the equipment. Firmware attacks can be difficult to detect, so prevention is the best way to fight them.</p>
-          <p>VULNCHAIN specializes in the analysis of firmware for errors, potentially existing backdoors, and the ways of implementing functionalities. Depending on the protections used, we download the firmware from the device, and we decipher and locate susceptibility within the code. We also verify whether the attacker may try to permanently replace the code within the firmware to add an unauthorized functionality.</p>
-          <p>Depending on your individual needs, we can offer you:</p>
-          <ul>
-              <li>analysis of the options of reading firmware from the layout,</li>
-              <li>analysis of the possibility of placing unauthorized firmware code for component,</li>
-              <li>analysis of the cryptographic protection of the code (e.g., encryption of the section to avoid reading and to perform retroactive analysis),</li>
-              <li>analysis of the existence of backdoors,</li>
-              <li>analysis of binary code for typical safety errors for a given architecture. </li>
-          </ul>
+          <input type="checkbox" id="q3" class="accordion-toggle">
+          <label for="q3" class="accordion-title">Firmware Analysis</label>
+          <div class="content">
+            <p>Firmware is low-level software that can be found in cameras, computers, consoles, telephones, TV sets and Internet of Things devices. It allows the operating system of a given hardware to communicate with its individual components. It can also act as the operating system for the entire device. </p>
+            <p>Although so important for the operation of devices that we use every day, the firmware is often designed without taking into account its security (especially when it comes to preventing physical attacks). This is dangerous because it can expose the device to cyberattacks, which may be aimed at spying on users, stealing data or taking control of the equipment. Firmware attacks can be difficult to detect, so prevention is the best way to fight them.</p>
+            <p>VULNCHAIN specializes in the analysis of firmware for errors, potentially existing backdoors, and the ways of implementing functionalities. Depending on the protections used, we download the firmware from the device, and we decipher and locate susceptibility within the code. We also verify whether the attacker may try to permanently replace the code within the firmware to add an unauthorized functionality.</p>
+            <p>Depending on your individual needs, we can offer you:</p>
+            <ul>
+                <li>analysis of the options of reading firmware from the layout,</li>
+                <li>analysis of the possibility of placing unauthorized firmware code for component,</li>
+                <li>analysis of the cryptographic protection of the code (e.g., encryption of the section to avoid reading and to perform retroactive analysis),</li>
+                <li>analysis of the existence of backdoors,</li>
+                <li>analysis of binary code for typical safety errors for a given architecture. </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </section>
