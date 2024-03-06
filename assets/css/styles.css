@@ -392,6 +392,37 @@ label:hover {
 
 
 
+.contact-section {
+  display: flex;
+}
+
+.contact-section .contact-text {
+ flex-direction: column;
+ justify-content: space-between;
+ padding: 2rem;
+ margin: auto;
+}
+
+.contact-section .contact-text .contact-button {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #DA250D;
+  color: #ccc;
+  padding: 20px;
+ }
+
+ .contact-section .contact-text .contact-button:hover {
+ background-color: #710a0a;
+ }
+
+.contact-section .contact-img {
+  height: auto;
+  max-width: 600px;
+  margin-left: auto;
+}
+
+
+
 
 footer {
   background-color: #1e1f22; /* Set a background color for the footer */
