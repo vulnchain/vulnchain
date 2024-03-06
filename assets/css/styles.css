@@ -379,6 +379,9 @@ label:hover {
   padding: 20px;
   background-color: #DA250D;
 }
+.sub-links li:hover {
+  background-color: #710a0a;
+}
 
 .sub-links li a {
   color: #fff;
