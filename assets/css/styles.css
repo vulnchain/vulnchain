@@ -129,7 +129,7 @@ nav ul li ul {
           content: none; }
         nav ul li ul li a:hover {
           color: #DA250D !important;
-          background-color: rgba(218, 37, 13, 0.5); }
+          background-color: rgba(255, 255, 255, 0.1); }
           nav ul li ul li a:hover {
             color: #FF603B !important; }
           nav ul li ul li a:hover:after {
@@ -221,8 +221,10 @@ nav .toggle_btn {
 }
 
 .header-section-index {
-  background-image: url(/assets/img/index.jpg);
+  background-image: url(/assets/img/index3.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 40rem;
 }
 
@@ -331,10 +333,9 @@ img {
 h3 {
   padding: 20px;
   text-align: left;
-  border-radius: 10px;
-  background-color: rgba(255,255,255,.3);
+  background-color: rgba(255,255,255,.1);
   backdrop-filter: blur(5px);
-  margin: 20px;
+  margin: 10px;
 }
 
 section li li {
@@ -369,9 +370,8 @@ label {
   display: block;
   padding: 20px;
   text-align: left;
-  background-color: rgba(255,255,255,.3);
+  background-color: rgba(255,255,255,.1);
   backdrop-filter: blur(5px);
-  border-radius: 10px;
   margin-bottom: 5px;
   cursor: crosshair;
   height: 100%;
@@ -380,6 +380,7 @@ label {
 
 label:hover {
   background-color: #710a0a;
+  backdrop-filter: blur(5px);
 }
 
 
@@ -401,9 +402,8 @@ label:hover {
   cursor: crosshair;
   margin: 20px;
   padding: 20px;
-  background-color: rgba(255,255,255,.3);
+  background-color: rgba(255,255,255,.1);
   backdrop-filter: blur(5px);
-  border-radius: 10px;
   transition: all 0.5s ease;
 }
 .sub-links li:hover {
@@ -433,10 +433,9 @@ label:hover {
 .contact-section .contact-text .contact-button {
   text-decoration: none;
   display: inline-block;
-  background-color: rgba(255,255,255,.3);
+  background-color: rgba(255,255,255,.1);
   backdrop-filter: blur(5px);
-  border-radius: 10px;
-  color: #ccc;
+  color:#DA250D;
   padding: 15px;
   transition: all 0.5s ease;
  }
@@ -467,7 +466,7 @@ footer {
 }
 
 .footer-logo {
-  width: 100px; /* Adjust the logo width as needed */
+  width: 140px; /* Adjust the logo width as needed */
   height: auto;
   margin-bottom: 20px;
 }
@@ -483,7 +482,7 @@ footer {
   color: #fff;
   font-size: 18px;
   margin-bottom: 15px;
-  border-radius: 10px;
+  margin: 0;
 }
 
 .footer-section p {
