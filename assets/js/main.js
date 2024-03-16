@@ -9,11 +9,6 @@ toggleBtn.onclick = function () {
     toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
 };
 
-// Add class to header on scroll
-window.addEventListener('scroll', function() {
-    var header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > header.clientHeight);
-  });
 
 document.addEventListener("DOMContentLoaded", function() {
     const accordionToggles = document.querySelectorAll('.accordion-toggle');
