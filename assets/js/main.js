@@ -11,34 +11,35 @@ toggleBtn.onclick = function () {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    const accordionToggles = document.querySelectorAll('.accordion-toggle');
-    
-    accordionToggles.forEach(function(toggle) {
-        toggle.addEventListener('change', function() {
+    var accordionToggles = document.querySelectorAll('.accordion-toggle');
+
+    for (var i = 0; i < accordionToggles.length; i++) {
+        accordionToggles[i].addEventListener('change', function() {
             if (this.checked) {
                 closeOtherAccordions(this);
                 scrollToAccordion(this);
             }
         });
-    });
-    
+    }
+
     function closeOtherAccordions(currentToggle) {
-        accordionToggles.forEach(function(toggle) {
-            if (toggle !== currentToggle) {
-                toggle.checked = false;
+        for (var i = 0; i < accordionToggles.length; i++) {
+            if (accordionToggles[i] !== currentToggle) {
+                accordionToggles[i].checked = false;
             }
-        });
+        }
     }
 
     function scrollToAccordion(toggle) {
-        const headerHeight = document.querySelector('header').offsetHeight;
-        const accordionOffsetTop = toggle.parentElement.offsetTop - headerHeight;
+        var headerHeight = document.querySelector('header').offsetHeight;
+        var accordionOffsetTop = toggle.parentElement.offsetTop - headerHeight;
         window.scrollTo({
             top: accordionOffsetTop,
-            behavior: 'smooth' // Smooth scrolling
+            behavior: 'smooth'
         });
     }
 });
+
 
 
 
