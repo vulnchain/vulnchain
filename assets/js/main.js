@@ -12,15 +12,16 @@ toggleBtn.onclick = function () {
 
 document.addEventListener("DOMContentLoaded", function() {
     const accordionToggles = document.querySelectorAll('.accordion-toggle');
-    
+
     accordionToggles.forEach(function(toggle) {
         toggle.addEventListener('change', function() {
             if (this.checked) {
                 closeOtherAccordions(this);
+                scrollToAccordion(this);
             }
         });
     });
-    
+
     function closeOtherAccordions(currentToggle) {
         accordionToggles.forEach(function(toggle) {
             if (toggle !== currentToggle) {
@@ -28,4 +29,22 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
+
+    function scrollToAccordion(toggle) {
+        const header = document.querySelector('header');
+        const headerHeight = header.offsetHeight;
+        const accordionOffsetTop = toggle.parentElement.offsetTop - headerHeight;
+        
+        window.scrollTo({
+            top: accordionOffsetTop,
+            behavior: 'smooth' // Smooth scrolling
+        });
+    }
 });
+
+
+
+
+
+
+
