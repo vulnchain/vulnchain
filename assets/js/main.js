@@ -43,59 +43,41 @@ toggleBtn.onclick = function () {
 document.addEventListener("DOMContentLoaded", function() {
     var accordionToggles = document.querySelectorAll('.accordion-toggle');
 
-    for (var i = 0; i < accordionToggles.length; i++) {
-        accordionToggles[i].addEventListener('change', function() {
+    accordionToggles.forEach(function(toggle) {
+        toggle.addEventListener('change', function() {
             if (this.checked) {
                 closeOtherAccordions(this);
+                expandAccordion(this);
                 scrollToAccordion(this);
+            }
+        });
+    });
+
+    function closeOtherAccordions(currentToggle) {
+        accordionToggles.forEach(function(toggle) {
+            if (toggle !== currentToggle) {
+                toggle.checked = false;
             }
         });
     }
 
-    function closeOtherAccordions(currentToggle) {
-        for (var i = 0; i < accordionToggles.length; i++) {
-            if (accordionToggles[i] !== currentToggle) {
-                accordionToggles[i].checked = false;
-            }
-        }
+    function expandAccordion(toggle) {
+        var content = toggle.nextElementSibling;
+        var contentHeight = content.scrollHeight;
+        content.style.maxHeight = contentHeight + 'px';
     }
 
     function scrollToAccordion(toggle) {
         var headerHeight = document.querySelector('header').offsetHeight;
-        var accordionOffsetTop = toggle.parentElement.offsetTop - headerHeight;
-        smoothScrollTo(accordionOffsetTop, 800); // 800 milliseconds duration for the animation
-    }
+        var targetElement = toggle.nextElementSibling;
+        var targetPosition = targetElement.offsetTop - headerHeight;
 
-    function smoothScrollTo(targetPosition, duration) {
-        var startPosition = window.pageYOffset;
-        var distance = targetPosition - startPosition;
-        var startTime = null;
-
-        function animation(currentTime) {
-            if (startTime === null) {
-                startTime = currentTime;
-            }
-
-            var elapsedTime = currentTime - startTime;
-            var scrollPosition = easeInOut(elapsedTime, startPosition, distance, duration);
-            window.scrollTo(0, scrollPosition);
-
-            if (elapsedTime < duration) {
-                requestAnimationFrame(animation);
-            }
-        }
-
-        function easeInOut(t, b, c, d) {
-            t /= d / 2;
-            if (t < 1) return c / 2 * t * t + b;
-            t--;
-            return -c / 2 * (t * (t - 2) - 1) + b;
-        }
-
-        requestAnimationFrame(animation);
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
     }
 });
-
 
 
 
