@@ -9,75 +9,41 @@ toggleBtn.onclick = function () {
     toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
 };
 
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     var accordionToggles = document.querySelectorAll('.accordion-toggle');
-
-//     for (var i = 0; i < accordionToggles.length; i++) {
-//         accordionToggles[i].addEventListener('change', function() {
-//             if (this.checked) {
-//                 closeOtherAccordions(this);
-//                 scrollToAccordion(this);
-//             }
-//         });
-//     }
-
-//     function closeOtherAccordions(currentToggle) {
-//         for (var i = 0; i < accordionToggles.length; i++) {
-//             if (accordionToggles[i] !== currentToggle) {
-//                 accordionToggles[i].checked = false;
-//             }
-//         }
-//     }
-
-//     function scrollToAccordion(toggle) {
-//         var headerHeight = document.querySelector('header').offsetHeight;
-//         var accordionOffsetTop = toggle.parentElement.offsetTop - headerHeight;
-//         window.scrollTo({
-//             top: accordionOffsetTop,
-//             behavior: 'smooth'
-//         });
-//     }
-// });
-
-document.addEventListener("DOMContentLoaded", function() {
-    var accordionToggles = document.querySelectorAll('.accordion-toggle');
-
-    accordionToggles.forEach(function(toggle) {
-        toggle.addEventListener('change', function() {
-            if (this.checked) {
-                closeOtherAccordions(this);
-                expandAccordion(this);
-                scrollToAccordion(this);
-            }
-        });
+$(document).ready(function() {
+    $('.accordion-toggle').on('change', function() {
+        if (this.checked) {
+            closeOtherAccordions(this);
+            slideUpContent();
+            slideToggleContent(this);
+            scrollToAccordion(this);
+        }
     });
 
     function closeOtherAccordions(currentToggle) {
-        accordionToggles.forEach(function(toggle) {
-            if (toggle !== currentToggle) {
-                toggle.checked = false;
-            }
-        });
+        $('.accordion-toggle').not(currentToggle).prop('checked', false);
     }
 
-    function expandAccordion(toggle) {
-        var content = toggle.nextElementSibling;
-        var contentHeight = content.scrollHeight;
-        content.style.maxHeight = contentHeight + 'px';
+    function slideUpContent() {
+        $('.accordion-content').slideUp(400);
+    }
+
+    function slideToggleContent(toggle) {
+        $(toggle).next('.accordion-content').slideToggle(400);
     }
 
     function scrollToAccordion(toggle) {
-        var headerHeight = document.querySelector('header').offsetHeight;
-        var targetElement = toggle.nextElementSibling;
-        var targetPosition = targetElement.offsetTop - headerHeight;
+        var headerHeight = $('header').outerHeight();
+        var accordionOffsetTop = $(toggle).parent().offset().top - headerHeight;
 
-        window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-        });
+        $('html, body').animate({
+            scrollTop: accordionOffsetTop
+        }, 800); // 800 milliseconds duration for the animation
     }
 });
+
+
+
+
 
 
 

@@ -442,6 +442,7 @@ label:hover {
 
  .contact-section .contact-text .contact-button:hover {
  background-color: #710a0a;
+ cursor: crosshair;
  }
 
 .contact-section .contact-img {
