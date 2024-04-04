@@ -500,15 +500,20 @@ footer {
 
 .footer-section a:hover {
   text-decoration: underline;
+  cursor: crosshair;
 }
 
 .social-links {
   display: flex;
 }
 
-.social-links a {
-  justify-content: center;
-  height: 60px;
-  width: 60px;
-  padding: 10px;
+.social-links a:hover {
+  text-decoration: none;
+  cursor: crosshair;
 }
+
+.fa-brands{
+  padding: 10px;
+  text-decoration: none;
+}
+
