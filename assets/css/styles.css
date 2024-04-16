@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 
 * {
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -127,10 +128,9 @@ nav ul li ul {
         nav ul li ul li a:after {
           content: none; }
         nav ul li ul li a:hover {
-          color: #DA250D !important;
           background-color: rgba(255, 255, 255, 0.1); }
           nav ul li ul li a:hover {
-            color: #FF603B !important; }
+            color: #af2020 !important; }
           nav ul li ul li a:hover:after {
             content: none; }
 
@@ -216,7 +216,7 @@ nav .toggle_btn {
   display: flex;
 }
 .pricing li p {
-  color: #DA250D;
+  color: #7a2525;
 }
 
 .header-section-index {
@@ -318,8 +318,6 @@ nav .toggle_btn {
 }
 
 section {
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(4px);
   padding: 10px;
   max-width: 100%; /* Adjusted the max-width */
 }
@@ -457,7 +455,8 @@ label:hover {
 
 footer {
   background-color: #1e1f22; /* Set a background color for the footer */
-  padding: 50px;
+  padding: 40px;
+  border-radius: 100px 100px 0 0;
 }
 
 .footer-container {
