@@ -6,12 +6,7 @@
 		<lastmod>2024-04-04</lastmod>
 	</url>
 	<url>
-		<loc>https://www.vulnchain.com/terms-and-conditions.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-04-02</lastmod>
-	</url>
-	<url>
-		<loc>https://www.vulnchain.com/pricing.html</loc>
+		<loc>https://www.vulnchain.com/about.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-04-02</lastmod>
 	</url>
@@ -21,52 +16,22 @@
 		<lastmod>2024-04-02</lastmod>
 	</url>
 	<url>
-		<loc>https://www.vulnchain.com/about.html</loc>
+		<loc>https://www.vulnchain.com/pricing.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-04-02</lastmod>
 	</url>
 	<url>
-		<loc>https://www.vulnchain.com/services/software-security.html</loc>
-		<priority>0.33</priority>
+		<loc>https://www.vulnchain.com/terms-and-conditions.html</loc>
+		<priority>0.67</priority>
 		<lastmod>2024-04-02</lastmod>
 	</url>
 	<url>
-		<loc>https://www.vulnchain.com/services/organization-security.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-04-02</lastmod>
+		<loc>https://www.vulnchain.com/404.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-05-20</lastmod>
 	</url>
 	<url>
-		<loc>https://www.vulnchain.com/services/infrastructure-security.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-04-02</lastmod>
-	</url>
-	<url>
-		<loc>https://www.vulnchain.com/services/hardware-security.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-04-02</lastmod>
-	</url>
-	<url>
-		<loc>https://www.vulnchain.com/industries/internet-of-things.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-04-02</lastmod>
-	</url>
-	<url>
-		<loc>https://www.vulnchain.com/industries/high-tech.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-04-02</lastmod>
-	</url>
-	<url>
-		<loc>https://www.vulnchain.com/industries/healthcare.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-04-02</lastmod>
-	</url>
-	<url>
-		<loc>https://www.vulnchain.com/industries/gambling.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-04-02</lastmod>
-	</url>
-	<url>
-		<loc>https://www.vulnchain.com/industries/e-commerce.html</loc>
+		<loc>https://www.vulnchain.com/industries/banking-and-fintech.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-04-02</lastmod>
 	</url>
@@ -76,7 +41,47 @@
 		<lastmod>2024-04-02</lastmod>
 	</url>
 	<url>
-		<loc>https://www.vulnchain.com/industries/banking-and-fintech.html</loc>
+		<loc>https://www.vulnchain.com/industries/e-commerce.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-04-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.vulnchain.com/industries/gambling.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-04-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.vulnchain.com/industries/healthcare.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-04-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.vulnchain.com/industries/high-tech.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-04-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.vulnchain.com/industries/internet-of-things.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-04-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.vulnchain.com/services/hardware-security.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-04-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.vulnchain.com/services/infrastructure-security.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-04-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.vulnchain.com/services/organization-security.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-04-02</lastmod>
+	</url>
+	<url>
+		<loc>https://www.vulnchain.com/services/software-security.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-04-02</lastmod>
 	</url>
