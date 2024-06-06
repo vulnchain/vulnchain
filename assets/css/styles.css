@@ -377,7 +377,7 @@ label:hover {
   display: inline-block;
   border-bottom: thin solid rgba(255, 255, 255, 0.2);
   border-top: thin solid rgba(255, 255, 255, 0.2);
-  background: linear-gradient(to top, #ffffff 50%, #ffffff1a 50%);
+  background: linear-gradient(to top, #ffffff 50%, rgba(255, 255, 255, 0.1) 50%);
   background-size: 100% 200%;
   background-position: 0 0;
   padding: 15px;
