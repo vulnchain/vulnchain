@@ -380,6 +380,7 @@ label:hover {
   background: linear-gradient(to top, #ffffff 50%, rgba(255, 255, 255, 0.1) 50%);
   background-size: 100% 200%;
   background-position: 0 0;
+  color: #fff;
   padding: 15px;
   transition: all 0.5s ease;
 }
@@ -387,6 +388,8 @@ label:hover {
 .contact-button:hover {
   background-position: 0 100%;
   color:#DA250D;
+  border-bottom: thin solid rgba(255, 255, 255, 0.2);
+  border-top: thin solid rgba(255, 255, 255, 0.2);
   cursor: crosshair; 
  }
 
