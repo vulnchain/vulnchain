@@ -378,8 +378,6 @@ label:hover {
   color:#DA250D;
   padding: 15px;
   transition: all 0.5s ease;
-  border-bottom: thin solid rgba(255, 255, 255, 0.2);
-  border-top: thin solid rgba(255, 255, 255, 0.2);
  }
 
  .contact-section .contact-text .contact-button:hover {
