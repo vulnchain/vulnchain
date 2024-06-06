@@ -49,6 +49,7 @@ nav .links li .sub-menu li a {
 }
 
 header {
+  margin: 10px;
   position: sticky;
   position: -webkit-sticky;
   background-color: rgba(0, 0, 0, 0.8);
@@ -56,8 +57,8 @@ header {
   -webkit-backdrop-filter: blur(10px);
   top: 0;
   width: 100%;
-  z-index: 100;
   border-bottom: thin solid rgba(255, 255, 255, 0.2);
+  border-top: thin solid rgba(255, 255, 255, 0.2);
 }
 
 nav ul li span{
@@ -377,7 +378,8 @@ label:hover {
   color:#DA250D;
   padding: 15px;
   transition: all 0.5s ease;
-  border-radius: 10px;
+  border-bottom: thin solid rgba(255, 255, 255, 0.2);
+  border-top: thin solid rgba(255, 255, 255, 0.2);
  }
 
  .contact-section .contact-text .contact-button:hover {
@@ -395,9 +397,10 @@ label:hover {
 
 
 footer {
-  background-color: #1e1f22; /* Set a background color for the footer */
+  margin: 10px;
   padding: 40px;
-  border-radius: 20px 20px 0 0;
+  border-bottom: thin solid rgba(255, 255, 255, 0.2);
+  border-top: thin solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-container {
@@ -425,7 +428,8 @@ footer {
   font-size: 18px;
   margin-bottom: 15px;
   margin: 0;
-  border-radius: 10px;
+  border-bottom: thin solid rgba(255, 255, 255, 0.2);
+  border-top: thin solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-section p {
