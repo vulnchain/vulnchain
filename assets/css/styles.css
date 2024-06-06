@@ -343,12 +343,19 @@ label:hover {
   cursor: crosshair;
   margin: 20px;
   padding: 20px;
-  background-color: rgba(255,255,255,.1);
-  backdrop-filter: blur(5px);
+  border-bottom: thin solid rgba(255, 255, 255, 0.2);
+  border-top: thin solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(to top, #ffffff 50%, rgba(255, 255, 255, 0.1) 50%);
+  background-size: 100% 200%;
+  background-position: 0 0;
+  color: #fff;
   transition: all 0.5s ease;
 }
 .sub-links li:hover {
-  background-color: #710a0a;
+  background-position: 0 100%;
+  color:#DA250D;
+  border-bottom: thin solid rgba(255, 255, 255, 0.2);
+  border-top: thin solid rgba(255, 255, 255, 0.2);
 }
 
 .sub-links li a {
@@ -375,6 +382,7 @@ label:hover {
 .contact-button {
   text-decoration: none;
   display: inline-block;
+  cursor: crosshair; 
   border-bottom: thin solid rgba(255, 255, 255, 0.2);
   border-top: thin solid rgba(255, 255, 255, 0.2);
   background: linear-gradient(to top, #ffffff 50%, rgba(255, 255, 255, 0.1) 50%);
@@ -390,7 +398,6 @@ label:hover {
   color:#DA250D;
   border-bottom: thin solid rgba(255, 255, 255, 0.2);
   border-top: thin solid rgba(255, 255, 255, 0.2);
-  cursor: crosshair; 
  }
 
 .contact-section .contact-img {
