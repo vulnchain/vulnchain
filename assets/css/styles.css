@@ -381,9 +381,9 @@ label:hover {
   text-decoration: none;
   display: inline-block;
   cursor: crosshair; 
-  border-bottom: thin solid rgba(255, 255, 255, 0.2);
-  border-top: thin solid rgba(255, 255, 255, 0.2);
-  background: linear-gradient(to top, #ffffff 50%, rgba(255, 255, 255, 0.1) 50%);
+  border-bottom: thin solid rgba(157, 157, 157, 1);
+  border-top: thin solid rgba(157, 157, 157, 1);
+  background: linear-gradient(to top, rgb(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.1) 50%);
   background-size: 100% 200%;
   background-position: 0 0;
   color: #fff;
@@ -394,8 +394,6 @@ label:hover {
 .contact-button:hover {
   background-position: 0 100%;
   color:#DA250D;
-  border-bottom: thin solid rgba(255, 255, 255, 0.2);
-  border-top: thin solid rgba(255, 255, 255, 0.2);
  }
 
 .contact-section .contact-img {
