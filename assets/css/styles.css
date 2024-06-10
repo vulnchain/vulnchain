@@ -340,6 +340,7 @@ label:hover {
 }
 
 .sub-links li {
+  text-decoration: none;
   cursor: crosshair;
   margin: 20px;
   padding: 20px;
@@ -359,13 +360,10 @@ label:hover {
 }
 
 .sub-links li a {
-  color: #fff;
   text-decoration: none;
   text-align: left;
   cursor: crosshair;
 }
-
-
 
 
 .contact-section {
