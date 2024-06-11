@@ -51,6 +51,7 @@ nav .links li .sub-menu li a {
 header {
   margin: 10px;
   position: sticky;
+  z-index: 100;
   position: -webkit-sticky;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(5px);
@@ -310,17 +311,21 @@ label {
   display: block;
   padding: 20px;
   text-align: left;
-  background-color: rgba(255,255,255,.1);
-  backdrop-filter: blur(5px);
-  margin-bottom: 5px;
+  border-bottom: thin solid rgba(255, 255, 255, 0.2);
+  border-top: thin solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(to top, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.1) 50%);
+  background-size: 100% 200%;
+  background-position: 0 0;
+  margin: 5px 0;
   cursor: crosshair;
   height: 100%;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 label:hover {
-  background-color: #710a0a;
-  backdrop-filter: blur(5px);
+  background-position: 0 100%;
+  backdrop-filter: blur(10px);
+  color:#DA250D;
 }
 
 
@@ -355,14 +360,13 @@ label:hover {
 .sub-links li:hover {
   background-position: 0 100%;
   color:#DA250D;
-  border-bottom: thin solid rgba(255, 255, 255, 0.2);
-  border-top: thin solid rgba(255, 255, 255, 0.2);
 }
 
 .sub-links li a {
   text-decoration: none;
   text-align: left;
   cursor: crosshair;
+  color: inherit;
 }
 
 
