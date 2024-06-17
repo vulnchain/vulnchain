@@ -242,6 +242,7 @@ nav .toggle_btn {
 .header-section {
   margin-bottom: auto;
   height: 100vh;
+  text-transform: uppercase;
 }
 
 .header-section h1{
@@ -259,6 +260,7 @@ nav .toggle_btn {
   font-size: 2vw;
   bottom: 30px;
   right: 40px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 section {
