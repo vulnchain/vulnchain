@@ -381,6 +381,7 @@ label:hover {
   bottom: .5rem;
   left: .5rem;
   right: auto;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .contact-section {
