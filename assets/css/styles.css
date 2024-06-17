@@ -89,6 +89,7 @@ nav .logo-img {
 nav .logo {
   display: flex;
   text-align: center;
+  text-transform: uppercase;
   justify-content: center;
   text-decoration: none;
   color: #fff;
