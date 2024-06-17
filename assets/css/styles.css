@@ -316,7 +316,7 @@ label {
   padding: 20px;
   text-align: left;
   text-transform: uppercase;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.2);
   background: linear-gradient(to top, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.1) 50%);
   background-size: 100% 200%;
   background-position: 0 0;
@@ -387,38 +387,35 @@ label:hover {
 
 .contact-section {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  border: thin solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  margin: 10px;
 }
 
-.contact-section .contact-text {
- flex-direction: column;
- justify-content: space-between;
- padding: 2rem;
- margin: auto;
-}
 
-.contact-button {
+.contact-section a {
   text-decoration: none;
+  text-transform: uppercase;
   display: inline-block;
   cursor: crosshair; 
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.2);
   background: linear-gradient(to top, rgb(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.1) 50%);
   background-size: 100% 200%;
   background-position: 0 0;
   color: #fff;
   padding: 15px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
-.contact-button:hover {
+.contact-section a:hover {
   background-position: 0 100%;
-  color:#DA250D;
+  color:#000000;
  }
 
-.contact-section .contact-img {
-  height: auto;
-  max-width: 600px;
-  margin-left: auto;
-}
 
 
 
@@ -435,6 +432,7 @@ footer {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
+  text-transform: uppercase;
 }
 
 .footer-logo {
@@ -455,8 +453,7 @@ footer {
   font-size: 18px;
   margin-bottom: 15px;
   margin: 0;
-  border-bottom: thin solid rgba(255, 255, 255, 0.2);
-  border-top: thin solid rgba(255, 255, 255, 0.2);
+  border: thin solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-section p {
