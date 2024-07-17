@@ -135,6 +135,7 @@ nav .links li:hover ul {
 nav ul li ul li a {
   color: #ffffff;
   display: block; 
+  text-transform: uppercase;
 }
 
 nav ul li ul li a:after {
