@@ -71,6 +71,7 @@ li:hover  .material-symbols-outlined {
   transform: rotate(180deg);
   transition-duration: .5s;
   color: red;
+  margin-right: 50px;
  }
 
 nav {
